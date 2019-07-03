@@ -7,6 +7,10 @@ All annotations aim at 2 things:
    1. Make the code readable by replacing obfuscated bits like (void)(arg) with UNUSED(arg);
    2. Have the compiler / the program make you hint at stuff when DEBUG is set
 
+# Usage
+
+Just include the header `annotations.h` in your source file.
+
 # Some examples
 
 For a complete documentation, see the header `annotations.h` .
@@ -43,7 +47,7 @@ void function_with_unused_arg(int i) {
 
 Would you have seen immediately what the `(void)(i);` is supposed to do?
 
-# DEPRECATED()
+## DEPRECATED()
 
 Declares a function as deprecated:
 
